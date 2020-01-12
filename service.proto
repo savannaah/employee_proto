@@ -105,6 +105,7 @@ message RawResponse {
         repeated string currency = 4;
         repeated string role = 5;
     }
+    Data data = 3;
 }
 
 service Employee {
