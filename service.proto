@@ -107,7 +107,7 @@ message RawResponse {
     }
 }
 
-service Warehouse {
+service Employee {
     rpc Raw(RawRequest) returns (RawResponse);
     rpc Create(CreateRequest) returns (DataResponse);
     rpc Get(GetRequest) returns (DataResponse);
