@@ -22,16 +22,17 @@ message RequestField {
     string addressCountry = 13;
     string emergencyContactFullName = 14;
     string emergencyContactMobile = 15;
-    string employeeTitle = 16;
-    int32 supervisorID = 17;
-    int64 hiredDate = 18;
-    bool savannahUser = 19;
-    string username = 20;
-    string password = 21;
-    string timeZone = 22;
-    string currency = 23;
-    string role = 24;
-    repeated int32 warehouses = 25;
+    string emergencyContactRelationship = 16;
+    string employeeTitle = 17;
+    int32 supervisorID = 18;
+    int64 hiredDate = 19;
+    bool savannahUser = 20;
+    string username = 21;
+    string password = 22;
+    string timeZone = 23;
+    string currency = 24;
+    string role = 25;
+    repeated int32 warehouses = 26;
 }
 
 message RawRequest {
