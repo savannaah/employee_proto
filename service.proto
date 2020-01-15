@@ -28,10 +28,9 @@ message RequestField {
     bool savannahUser = 19;
     string username = 20;
     string password = 21;
-    string rePassword = 22;
-    string timeZone = 23;
-    string currency = 24;
-    string role = 25;
+    string timeZone = 22;
+    string currency = 23;
+    string role = 24;
 }
 
 message RawRequest {
@@ -81,18 +80,16 @@ message DataResponse {
         string hiredDate = 20;
         bool savannahUser = 21;
         string username = 22;
-        string password = 23;
-        string rePassword = 24;
-        string timeZone = 25;
-        string currency = 26;
-        string role= 27;
-        string clientName = 28;
-        string createdDate = 29;
-        string createdBy = 30;
-        string lastModifiedBy = 31;
-        string lastModifiedDate = 32;
-        string recordState = 33;
-        string lastLogin = 34;
+        string timeZone = 23;
+        string currency = 24;
+        string role= 25;
+        string clientName = 26;
+        string createdDate = 27;
+        string createdBy = 28;
+        string lastModifiedBy = 29;
+        string lastModifiedDate = 30;
+        string recordState = 31;
+        string lastLogin = 32;
     }
     Data data = 3;
 }
