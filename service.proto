@@ -91,6 +91,7 @@ message DataResponse {
         string lastModifiedDate = 30;
         string recordState = 31;
         string lastLogin = 32;
+        repeated int32 warehouses = 33;
     }
     Data data = 3;
 }
