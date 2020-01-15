@@ -79,7 +79,7 @@ message DataResponse {
         string employeeTitle = 18;
         string supervisor = 19;
         string hiredDate = 20;
-        string savannahUser = 21;
+        bool savannahUser = 21;
         string username = 22;
         string password = 23;
         string rePassword = 24;
