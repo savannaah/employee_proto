@@ -26,9 +26,6 @@ message RequestField {
     string employeeTitle = 17;
     int32 supervisorID = 18;
     int64 hiredDate = 19;
-    bool savannaahUser = 20;
-    string username = 21;
-    string password = 22;
     string timeZone = 23;
     string currency = 24;
     string role = 25;
@@ -37,6 +34,17 @@ message RequestField {
 
 message RawRequest {
     RequestHeader header = 1;
+}
+
+message LoginCredentialRequest {
+    RequestHeader header = 1;
+    int32 id = 2;
+    message Data {
+        string username = 1;
+        string password = 2;
+        string confirmPassword = 3;
+    }
+    Data data = 3;
 }
 
 message GetRequest {
@@ -113,9 +121,15 @@ message RawResponse {
     Data data = 3;
 }
 
+message SimpleResponse {
+    int32 statusCode = 1;
+    string message = 2;
+}
+
 service Employee {
     rpc Raw(RawRequest) returns (RawResponse);
     rpc Create(CreateRequest) returns (DataResponse);
     rpc Get(GetRequest) returns (DataResponse);
     rpc Update(UpdateRequest) returns (DataResponse);
+    rpc UpdateLoginCredential(LoginCredentialRequest) returns (SimpleResponse);
 }
