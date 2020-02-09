@@ -26,6 +26,9 @@ message RequestField {
     string employeeTitle = 17;
     int32 supervisorID = 18;
     int64 hiredDate = 19;
+    bool savannaahUser = 20;
+    string username = 21;
+    string password = 22;
     string timeZone = 23;
     string currency = 24;
     string role = 25;
