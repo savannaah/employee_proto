@@ -67,6 +67,12 @@ message UpdateRequest {
     RequestField field = 4;
 }
 
+message ActionRequest {
+    RequestHeader header = 1;
+    int32 id = 2;
+    string name = 3;
+}
+
 message DataResponse {
     int32 statusCode = 1;
     string message = 2;
@@ -136,5 +142,7 @@ service Employee {
     rpc Create(CreateRequest) returns (DataResponse);
     rpc Get(GetRequest) returns (DataResponse);
     rpc Update(UpdateRequest) returns (DataResponse);
+    rpc Action(ActionRequest) returns (DataResponse);
     rpc UpdateLoginCredential(LoginCredentialRequest) returns (SimpleResponse);
+
 }
