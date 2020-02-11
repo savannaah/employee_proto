@@ -63,8 +63,7 @@ message CreateRequest {
 message UpdateRequest {
     RequestHeader header = 1;
     int32 id = 2;
-    string action = 3;
-    RequestField field = 4;
+    RequestField field = 3;
 }
 
 message ActionRequest {
