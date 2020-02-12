@@ -110,7 +110,8 @@ message DataResponse {
         string recordState = 32;
         string lastLogin = 33;
         repeated int32 warehouses = 34;
-        bool editable = 35;
+        bool editable = 35;//false if requested user has same level of role as this record else true otherwise
+        int64 referencedBy = 36;//number of records that referenced this record
     }
     Data data = 3;
 }
