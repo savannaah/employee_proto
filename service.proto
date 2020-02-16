@@ -29,10 +29,11 @@ message RequestField {
     bool savannaahUser = 20;
     string username = 21;
     string password = 22;
-    string timeZone = 23;
-    string currency = 24;
-    string role = 25;
-    repeated int32 warehouses = 26;
+    string confirmPassword = 23;
+    string timeZone = 24;
+    string currency = 25;
+    string role = 26;
+    repeated int32 warehouses = 27;
 }
 
 message RawRequest {
@@ -124,10 +125,9 @@ message RawResponse {
         string name = 2;
     }
     message Data {
-        repeated string avatar = 1;
-        repeated string timeZone = 2;
-        repeated string currency = 3;
-        repeated Role roles = 4;
+        repeated string timeZone = 1;
+        repeated string currency = 2;
+        repeated Role roles = 3;
     }
     Data data = 3;
 }
