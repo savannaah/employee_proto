@@ -25,7 +25,7 @@ message RequestField {
     string emergencyContactRelationship = 16;
     string employeeTitle = 17;
     int32 supervisorID = 18;
-    int64 hiredDate = 19;
+    string hiredDate = 19;
     bool savannaahUser = 20;
     string username = 21;
     string password = 22;
