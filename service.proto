@@ -70,9 +70,10 @@ message LoginCredentialRequest {
     RequestHeader header = 1;
     int32 id = 2;
     message Data {
-        string username = 1;
-        string password = 2;
-        string confirmPassword = 3;
+        bool savannaahUser = 1;
+        string username = 2;
+        string password = 3;
+        string confirmPassword = 4;
     }
     Data data = 3;
 }
